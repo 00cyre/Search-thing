@@ -14,7 +14,7 @@ var texto;
 			texto = prompt();
 		}
 		if (texto != null) {
-			$.get("https://www.googleapis.com/customsearch/v1?key={KEY}&cx={CX}="
+			$.get("https://www.googleapis.com/customsearch/v1?key={KEY}&cx={CX}&q="
 			+ texto, function(data) 
 			{
 				if ($( ".areaEnunciado" ).find( "strong" )["length"] != 0)
